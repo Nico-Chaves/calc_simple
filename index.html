@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Seguro No Pagamos Coop</h1>
+    </div>
+        
+    <form class="formulario">
+        <h1>Formulario de Contacto</h1>
+        <h3>Completar con los datos personales</h3>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input name="nombre" id="nombre" type="text" placeholder="Ingrese su nombre"/>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input name="apellido" id="apellido" type="text" placeholder="Ingrese su apellido"/>
+        </div>
+        <div>
+            <label for="dni">DNI</label>
+            <input name="dni" id="dni" type="number" placeholder="Ingrese su dni"/>
+        </div>
+        <div>
+            <label for="correo">Correo</label>
+            <input name="correo" id="correo" type="email" placeholder="Ingrese su correo"/>
+        </div>
+        <div>
+            <label for="telefono">Teléfono</label>
+            <input name="telefono" id="telefono" type="tel" placeholder="Ingrese su telefono"/>
+        </div>
+        <div>
+            <label>Tipo de Seguro</label>
+            <select name="tipo_seguro" id="tipo_seguro_id" onchange="valorTipoSeguro()">
+                <option value="0"></option>
+                <option value="1">Básico</option>
+                <option value="2">Intermedio</option>
+                <option value="3">Premiun</option>
+            </select>
+            <div id="mensajeValorTipoSeguro">
+            </div>
+        </div>
+        <div>
+            <input name="enviar" id="enviar"  type="submit" value="Solicitar"/>
+        </div>
+    </form>
+    <script src="script.js"></script> 
+</body>
+</html>
